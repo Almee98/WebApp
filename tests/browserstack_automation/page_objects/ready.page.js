@@ -1,6 +1,7 @@
 import { $, $$ } from '@wdio/globals';
 import Page from './page';
 import { driver } from '@wdio/globals';
+import { driver } from '@wdio/globals';
 
 class ReadyPage extends Page {
   constructor () {
@@ -213,10 +214,6 @@ class ReadyPage extends Page {
 
   get getDemocraticClubsLinkElement() {
     return $('a[href="/value/democratic_clubs"]')
-  }
-
-  get getProfileIconElement() {
-    return $('#profileAvatarHeaderBar');
   }
 
 
