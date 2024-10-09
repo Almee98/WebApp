@@ -1,6 +1,7 @@
 import { $, $$ } from '@wdio/globals';
 import Page from './page';
 import { driver } from '@wdio/globals';
+import { driver } from '@wdio/globals';
 
 class ReadyPage extends Page {
   constructor () {
