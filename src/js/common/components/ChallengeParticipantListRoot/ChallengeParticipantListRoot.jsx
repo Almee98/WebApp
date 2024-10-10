@@ -10,7 +10,6 @@ import AppObservableStore, { messageService } from '../../stores/AppObservableSt
 import ChallengeParticipantStore from '../../stores/ChallengeParticipantStore';
 import FirstChallengeParticipantListController from './FirstChallengeParticipantListController';
 import YourRankOutOf from '../Challenge/YourRankOutOf';
-import ChallengeStore from "../../stores/ChallengeStore";
 
 // const FirstChallengeParticipantListController = React.lazy(() => import(/* webpackChunkName: 'FirstChallengeParticipantListController' */ './FirstChallengeParticipantListController'));
 const participantListDummyData = [
