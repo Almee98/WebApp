@@ -123,12 +123,6 @@ export const FlexDivLeft = styled('div')`
 `;
 
 export const CardForListBodyPlaceholderWrapper = styled('div')`
-  height: 440px;
-
-  @media (max-width: 480px) {
-    width: 330px;
-    height: 416px;
-  }
 `;
 
 const PlaceholderThermometer = styled('div')`
