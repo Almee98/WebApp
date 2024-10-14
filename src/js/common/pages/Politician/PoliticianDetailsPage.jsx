@@ -954,20 +954,13 @@ class PoliticianDetailsPage extends Component {
                 </MobileHeaderContentContainer>
               </MobileHeaderInnerContainer>
             </MobileHeaderOuterContainer>
-            {politicianWeVoteId ? (
+            <Suspense fallback={<span>&nbsp;</span>}>
               <PoliticianCardForList
                 politicianWeVoteId={politicianWeVoteIdForDisplay}
                 useCampaignSupportThermometer
                 useVerticalCard
               />
-            ) : (
-              <CardForListBodyPlaceholder
-                useVerticalCard
-                hideCardMargins
-                limitCardWidth
-                profileImageBackgroundColor
-              />
-            )}
+            </Suspense>
             <CampaignDescriptionWrapper hideCardMargins>
               {politicianDataFound && (
                 <DelayedLoad waitBeforeShow={250}>
@@ -1120,20 +1113,13 @@ class PoliticianDetailsPage extends Component {
           <DetailsSectionDesktopTablet className="u-show-desktop-tablet">
             <ColumnsWrapper>
               <ColumnOneThird>
-                {politicianWeVoteId ? (
+                <Suspense fallback={<span>&nbsp;</span>}>
                   <PoliticianCardForList
                     politicianWeVoteId={politicianWeVoteIdForDisplay}
                     useCampaignSupportThermometer
                     useVerticalCard
                   />
-                ) : (
-                  <CardForListBodyPlaceholder
-                    useVerticalCard
-                    hideCardMargins
-                    limitCardWidth
-                    profileImageBackgroundColor
-                  />
-                )}
+                </Suspense>
                 <CampaignOwnersDesktopWrapper>
                   <CampaignOwnersList politicianWeVoteId={politicianWeVoteIdForDisplay} />
                 </CampaignOwnersDesktopWrapper>
